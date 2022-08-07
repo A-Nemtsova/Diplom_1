@@ -21,21 +21,9 @@ public class BunTest {
     }
 
     @Test
-    public void getNameNegativeTest() {
-        assertNotEquals("Black bun", bun.getName());
-    }
-
-    @Test
     public void getPricePositiveTest() {
-    Float actual = bun.getPrice();
-    Float expected = 900.0f;
-    assertEquals(expected, actual);
-    }
-
-    @Test
-    public void getPriceNegativeTest() {
         Float actual = bun.getPrice();
-        Float unexpected = 800.0f;
-        assertNotEquals(unexpected, actual);
+        Float expected = 900.0f;
+        assertEquals(expected, actual);
     }
 }
